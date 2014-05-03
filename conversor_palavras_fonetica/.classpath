@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/befbr/Downloads/phonetic_demo.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/mongo-java-driver-2.12.1.jar" sourcepath="/var/www/html/conversor_palavras_fonetica/lib/mongo-java-driver-2.12.1-sources.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/mongo-java-driver-2.12.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/mongo-java-driver-2.12.1-sources.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/elasticsearch-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/elasticsearch-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/json-20140107.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-core-lgpl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-jaxrs-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-mapper-lgpl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-mrbean-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-smile-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/jackson-xc-1.9.13.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="/var/www/html/conversor_palavras_fonetica/lib/gson-2.2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,2 @@
+db.addUser({ user: "befbr", pwd: "BuscA3Lastica_C0pA2014", roles: [{ role: "readWrite", db: "busca_elastica" }]});
+
