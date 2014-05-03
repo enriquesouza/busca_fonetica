@@ -125,13 +125,13 @@ public class ProdutosJson {
 				if (item.get("textobol") != null)
 					produto.setTextobol(item.get("textobol").toString());
 
-				System.out.println("Produto: " + produto.getNome()
-						+ " Codigo: " + produto.getNomeFonetico());
+				// System.out.println("Produto: " + produto.getNome()
+				// + " Codigo: " + produto.getNomeFonetico());
 
 				produtos.add(produto);
 
 			}
-			System.out.println("Tamanho do array: " + produtos.size());
+			// System.out.println("Tamanho do array: " + produtos.size());
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -149,12 +149,17 @@ public class ProdutosJson {
 		List<String> indexes = new ArrayList<String>();
 
 		for (ProdutoBE produto : produtos) {
-			Gson gson = new Gson();
-			String json = gson.toJson(produto);
-			indexes.add(json);
-			
-			System.out.println(json);
+
+			indexes.add(ConverterObjetoParaJson(produto));
+
+			// System.out.println(json);
 		}
 		return indexes;
 	}
+
+	public String ConverterObjetoParaJson(ProdutoBE produto) {
+		Gson gson = new Gson();
+		return gson.toJson(produto);
+	}
+
 }

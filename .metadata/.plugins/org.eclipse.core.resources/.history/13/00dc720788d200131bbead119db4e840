@@ -1,0 +1,34 @@
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import java.util.*;
+
+import org.apache.lucene.*;
+
+public class BuscaElastica {
+
+	private String endereco = "ubuntuserver";
+	private Integer porta = 9300;
+
+	public TransportClient getTransportClient() {
+		TransportClient client = new TransportClient();
+		InetSocketTransportAddress socket = new InetSocketTransportAddress(
+				this.endereco, this.porta);
+		client.addTransportAddress(socket);
+		return client;
+	}
+
+	public IndexResponse CriarIndice(String indice, String tipo, String id,
+			Map<String, Object> dado) {
+		TransportClient client = getTransportClient();
+		return client.prepareIndex(indice, tipo, id).setSource(dado).execute()
+				.actionGet();
+	}
+
+	public IndexResponse CriarIndice(String indice, String tipo, String id,
+			String dado) {
+		TransportClient client = getTransportClient();
+		return client.prepareIndex(indice, tipo, id).setSource(dado).execute()
+				.actionGet();
+	}
+}
